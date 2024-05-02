@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshman Chronicles</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background:;
+            color: #fff;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        nav {
+            text-align: right; 
+            padding: 0.5rem 1rem; 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1rem; 
+        }
+        .background {
+            background-image: url(background.jpg);
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;
+            
+        }
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .info-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        }
+
+        .button {
+        padding: 20px 40px;
+        font-size: 18px;
+        background-color: rgb(16, 16, 182);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 10px;
+        margin-bottom: 10px; 
+        transition: background-color 0.3s;
+        text-decoration: none;
+        }
+
+        .button:hover {
+        background-color:rgb(11, 11, 92);
+        }
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        .btn-primary {
+            background: rgb(16, 16, 182);
+        }
+
+        .btn-primary:hover {
+            background: rgb(11, 11, 92);
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .button {
+                margin: 0 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                width: 95%;
+            }
+            .button {
+                padding: 15px 30px; 
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            flex: 0 0 33.33%;
+            padding: 0 10px; 
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background:  rgb(16, 16, 182);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-btn:hover {
+            background: rgb(11, 11, 92);
+        }
+
+        .prev-btn {
+            left: 0;
+        }
+
+        .next-btn {
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="">Logo</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="file.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="background">
+        <div class = "intro">
+        <h3>FRESHIES CHRONICLES</h3>
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>info 1</h2>
+            <p>This website aims to help you with your needs in further knowing the Technological Institute of Manila.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="info-container">
+            <a href="Discipline.html" class="button">DISCIPLINE</a>
+            <a href="Application.html" class="button">APPLICATION</a>
+            <a href="Rules and Regulation.html" class="button">RULES AND REGULATION</a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Helpful Tips !</h2>
+            <div class="card">
+                <h3>DISCIPLINE</h3>
+                <p>brief description</p>
+                <a href="" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>APPLICATION</h3>
+                <p>brief description</p>
+                <a href="" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>RULES AND REGULATION</h3>
+                <p>brief description </p>
+                <a href="" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        /* programs */
+    </section>
+
+ <section>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Slide 5">
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Slide 5">
+            </div>
+        </div>
+        <div class="carousel-btn prev-btn" onclick="prevSlide()">Prev</div>
+        <div class="carousel-btn next-btn" onclick="nextSlide()">Next</div>
+    </div>
+ </section>
+
+ <section>
+    /* map */
+
+    <img src="">
+ </section>
+
+ <section>
+    <header>
+        <h1>School Policies</h1>
+    </header>
+    <div class="container">
+        <div class="policy-section">
+            <h2>Major Policies</h2>
+            <button class="accordion">Click to expand/collapse</button>
+            <div class="panel">
+                <div class="panel-content">
+                    <ul class="policy-list">
+<li>Academic Dishonesty
+    <ul>
+      <li>Forgery or falsification and/or alteration of academic or official school records or school-related documents of any kind.</li>
+      <li>All forms of cheating in any examination, test, quiz, project, report, or assignment.</li>
+      <li>Academic dishonesty such as plagiarism in projects, reports, or term paper submissions; passing off someone else’s work as one’s own with or without major or minor adjustment.</li>
+    </ul>
+  </li>
+  <li>Student Conduct
+    <ul>
+      <li>Starting or taking offensive action that clearly provokes violence.</li>
+      <li>Fighting with, instigating a fight with, infliction of physical injury, coercion, intimidation, and/or use of threat against another student, any school official, faculty member, or any member of the non-teaching staff inside or outside the school premises.</li>
+      <li>Possession and/or drinking of alcoholic beverages within the school campus or being in the school premises under the influence of liquor.</li>
+      <li>Possession, use, or sale of prohibited drugs or chemicals and hallucinogenic drugs.</li>
+    </ul>
+  </li>
+  <li>IT Security
+    <ul>
+      <li>Computer hacking, computer fraud, and various computer crimes such as piracy and copyright infringement.</li>
+      <li>Unauthorized use of T.I.P software; use of unlicensed software in school equipment; the act of copying, selling, pirating of software licensed to T.I.P; unauthorized use of equipment to develop unauthorized software, programs or systems; to spread computer viruses; use of school equipment such as computers, DVDs or other equivalent technology to view pornographic materials; to engage in computer games and other similar violations of the ICT Acceptable Use Policies.</li>
+      <li>Negligence in safeguarding or sharing the account information, including the username and password, being able to log in to the school’s facilities, including but not limited to computerized applications.</li>
+    </ul>
+  </li>
+  <li>Other Violations
+    <ul>
+      <li>Unauthorized selling of tickets.</li>
+      <li>Unauthorized monetary collections and other forms of illegal exaction and transactions.</li>
+      <li>Unauthorized solicitation of favors, gifts or donations, in cash or in-kind, from T.I.P employees, fellow students or external stakeholders using the name of the school.</li>
+      <li>Unauthorized raising of funds to be used for school activities.</li>
+      <li>Refusal to undergo random drug testing when it is deemed necessary by the school.</li>
+      <li>Possession or use of pyrotechnics, explosives, firearms/live ammunition (bullets), and/or deadly weapons.</li>
+      <li>Possession, display, and/or distribution of pornographic material.</li>
+      <li>Gambling, including its variations or taking part in any game of chance for money, and/or possession of gambling paraphernalia.</li>
+      <li>Acts of lewdness and indecency, display of immoral conduct and obscenity.</li>
+      <li>Excessive public display of affection towards another student.</li>
+      <li>Sexual harassment including but not limited to unwelcome and inappropriate physical and verbal behavior of sexual nature and the use of sexually suggestive objects, pictures, or letters not related to educational purposes.</li>
+      <li>Vandalism or malicious destruction of school property.</li>
+      <li>Theft, pilferage of school equipment, materials or supplies, extortion, robbery, or an attempt thereof, and any form of dishonesty.</li>
+      <li>Smoking within the campus and bringing in or using an e-cigarette.</li>
+      <li>Recruiting for or joining illegal organizations as well as organizations not recognized by the school.</li>
+      <li>Deceptive and coercive recruitment, hazing, and other similar acts to fraternities.</li>
+      <li>Illegal entry of school premises (e.g., use of another student’s ID).</li>
+      <li>Illegal access to school facilities (e.g., use of another student’s ID/registration card/library card for borrowing apparatus in the laboratory, for borrowing books in the library, or for any other purposes).</li>
+      <li>Deliberate illegal entry into and disruption of ongoing classes or any school activity.</li>
+      <li>Unauthorized entry to the school’s restricted area.</li>
+      <li>Abusing school permits issued such as, but not limited to, bringing in and using electronic devices or musical instruments.</li>
+      <li>Abusing school permits issued to use school facilities, space, building, apparatus, equipment, books, tools, materials, among others.</li>
+      <li>Using the student organization, or student government for illegal, unofficial, and/or personal use.</li>
+      <li>Using the funds of the class for illegal, unofficial, and/or personal use.</li>
+      <li>Representing the school during off-campus activities without authorization.</li>
+      <li>Acts of disrespect, arrogance in words or deeds, which shall put the school, its employees, and fellow students under ridicule or contempt.</li>
+      <li>Rumor-mongering, defamation, which includes libel and slander, or public imputation of a crime or vice, defect or act that shall cause dishonor or discredit to the school, its employees, and fellow students.</li>
+      <li>Fabricating charges or coming up with a complaint against the school, its employees, and fellow students that are proven to be malicious and/or without basis.</li>
+      <li>Physical bullying and other offensive behavior, including teasing, criticizing, aggressive acts, and making offensive statements and gestures.</li>
+      <li>Direct assault upon a T.I.P. employee regardless of rank and/or department.</li>
+      <li>Actual or attempted bribery of a T.I.P. employee, in the form of cash, gift certificates, commission, and the like in exchange for favors such as, but not limited to, changing of grades, etc.</li>
+      <li>Preparation, publication, possession, and/or distribution of subversive, banned materials or literature.</li>
+      <li>Acts of subversion and insurgency such as unauthorized demonstrations, rallies, and boycotting of classes.</li>
+      <li>Conviction before any court for a criminal offense involving moral turpitude against a person or property.</li>
+      <li>Unauthorized use of the school's name, its logos, and other school emblems.</li>
+      <li>Use the school as a subject in theses, informal studies, and the like without prior permission and approval.</li>
+      <li>Conducting a study about T.I.P. or publishing the results of a study that tends to prejudice the good name and/or image of the school.</li>
+      <li>Acts that bring the name of T.I.P. into disrepute, whether real or imaginary, such as the public and malicious imputation of a crime, vice, defect, or any act, omission, condition, status, or circumstance, tending to cause disorder, discredit or contempt for the name of the Institution.</li>
+      <li>Spreading lies, half-truths, or unfounded claims about the school.</li>
+      <li>Verbal or written communication/action that conveys false information concerning threats of bombs, explosives, or any similar devices. (i.e., bomb jokes, pressing the fire alarm recklessly, etc.)</li>
+      <li>Other offenses resulting in major injury to a person and/or damage to property.</li>
+      <li>Other offenses similar to the above and any gross misconduct.</li>
+    </ul>
+  </li>
+</ul>
+                </div>
+            </div>
+        </div>
+        <div class="policy-section">
+            <h2>Minor Policies</h2>
+            <button class="accordion">Click to expand/collapse</button>
+            <div class="panel">
+                <div class="panel-content">
+                    <ul class="policy-list">
+                        <li>Failure to abide with the health and safety protocols</li>
+                        <li>Non-wearing of school ID card</li>
+                        <li>Tampered/unvalidated school ID card</li>
+                        <li>Improper haircut/style, improper hair dye color</li>
+                        <li>Improper or non-wearing of school uniform or wearing of PE uniform in non-PE classes; or improper/indecent attire during classes</li>
+                        <li>Non-observance of dress code or improper civilian attire during non-school uniform day/s</li>
+                        <li>Wearing earrings (for male students),pierced jewelry like nose-ring, tongue-ring, and brow-ring, caps scarves, and other unnecessary and inappropriate fashion items</li>
+                        <li>Cross-dressing. Female students should not wear male uniforms and vice-versa. This also applies to civilian attire during non-school uniform days (Wednesday and Saturday)</li>
+                        <li>Refusal to submit one's self and belongings to lawful inspection and/or search</li>
+                        <li>Failure to return books borrowed from the library on time</li>
+                        <li>Lost/damaged books from the library</li>
+                        <li>Use of mobile phones and multimedia devices not related to class activities during class hours</li>
+                        <li>Unauthorized posting of announcements, posters, or streamers on the school premises</li>
+                        <li>Running, shouting, whistling, or any action, which tends to distract other students</li>
+                        <li>Sitting on the armchairs, tables, and other school furniture that leads to eventual destruction of school property/ies</li>
+                        <li>Littering or spitting inside the campus</li>
+                        <li>Loitering in corridors</li>
+                        <li>Chewing gum within the campus</li>
+                        <li>Hiding valuable property of others</li>
+                        <li>Public display of affection</li>
+                        <li>Other offenses similar to the above</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="button-container">
+ <button class="popup-button" onclick="openPopup()">View Punishments/Sanctions</button>
+ <button class="back-button" onclick="location.href='main.html'">BACK</button>
+ </div>
+    <!-- Popup Box ng Punishments/Sanctions -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Punishments/Sanctions</h2>
+            <ul>
+                <li>Punishment 1: Lorem ipsum dolor sit amet.</li>
+                <li>Punishment 2: Consectetur adipiscing elit.</li>
+                <li>Punishment 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+        </div>
+        <span class="popup-close" onclick="closePopup()">X</span>
+    </div>
+
+    <script>
+        var accordions = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        function openPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+ </section>
+ <script>
+    const carousel = document.querySelector('.carousel');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    let currentIndex = 5;
+    const slideWidth = carousel.offsetWidth / 3;
+
+    function prevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    }
+
+    function nextSlide() {
+        if (currentIndex < carousel.children.length - 3) {
+            currentIndex++;
+            updateCarousel();
+        }
+    }
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+</script>
+    <footer>
+        <div class="container">
+            <p> info/links??</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
