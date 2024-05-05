@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+header {
+    background: linear-gradient(to bottom right, #181736, #413d8f); 
+    color: white; 
+    padding: 20px 0;
+    margin: 0;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-title {
+    background-color: #353274;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.accordion-title:hover {
+    background-color: #413d8f;
+}
+
+.accordion-content {
+    padding: 12px;
+    max-height: 0px;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    letter-spacing: 1px;
+    margin: 0;
+    outline: none;
+    border: none;
+    z-index: 1;
+    background: linear-gradient(to bottom right, #181736, #39367d); 
+    border-radius: 0 0 12px 12px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.panel {
+    margin-top: 40px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.accordion-content ul {
+    font-size: 18px;
+}
+
+.accordion-content.visible {
+    background-color: #211f47;
+    color: white;
+}
+
+
+.applybtn {
+  background: linear-gradient(to bottom right, #181736, #39367d);
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Requirements</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admission Requirements</h1>
+  </header>
+  <div class="accordion">
+    <div class="panel">
+      <div id="title-1" class="accordion-title">
+        <div>Senior High School</div>
+      </div>
+      <div id="shs" class="accordion-content">
+        <ul>
+          <li>Original Junior High School Report Card (Form 138, now known as SF9)</li>
+          <li>2 pcs 2" x 2" recent ID pictures</li>
+          <li>PSA Birth Certificate (Original Copy)</li>
+          <li>Certificate of Good Moral Character</li>
+          <li>DepEd Voucher Certification (if applicable)</li>
+          <li>Certificate of Honors (for SHS Graduate with honors)</li>
+        </ul>
+        <p>For transferees, submit an Original Copy of Transfer Credentials alongside rest of requirements.</p>
+        <p>Note: T.I.P. Manila no longer offers Senior High School (SHS). Applicants who wish to pursue their SHS education with T.I.P. may consider enrolling at our Quezon City Campus.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <div id="title-2" class="accordion-title">
+        <div>Transferees</div>
+      </div>
+      <div id="transferees" class="accordion-content">
+        <ul>
+          <li>Original High School Report Card (Form 138/SF9) in Grade 12</li>
+          <li>PSA Birth Certificate (Original Copy)</li>
+          <li>Certificate of Good Moral Character</li>
+          <li>Two (2) copies of 2" x 2" recent ID pictures</li>
+          <li>Certificate of Honors (for SHS graduates with honors)</li>
+        </ul>
+        <ul>
+  <li>Filipino Graduates of Secondary Education from Philippine Secondary Schools Abroad 
+    <ul>
+      <li>High School Report Card (Form 138/SF9) in Grade 12 or Certificate of Completion of Secondary Education or its equivalent</li>
+      <li>Philippine Statistics Authority (PSA) Birth Certificate</li>
+      <li>Certificate of Good Moral Character (with school seal)</li>
+      <li>Two (2) copies of 2"x 2" recent picture</li>
+      <li>Photocopy of Philippine passport</li>
+      <li>Certificate of Honors / Rank, if applicable</li>
+    </ul>
+  </li>
+  <li>Filipino Graduates of Secondary Education from Foreign Schools 
+    <ul>
+      <li>Authenticated Scholastic Records and Certification of Graduation or Certification of Completion of Secondary Education or its equivalent</li>
+      <li>Certification of Equivalency from DepEd</li>
+      <li>Philippine Statistics Authority (PSA) Birth Certificate</li>
+      <li>Two (2) copies of 2"x 2" recent picture</li>
+      <li>Original and photocopy of Philippine passport / Foreign Passport</li>
+      <li>Authenticated Identification Certificate for Dual Citizenship under RA 9225, if holder of foreign passport</li>
+    </ul>
+  </li>
+  
+  <li>Filipino graduates prior to S.Y. 2014-2014 who did not enroll in any tertiary institution immediately after graduation 
+    <ul>
+      <li>High School Report Card (Form 138)</li>
+      <li>Philippine Statistics Authority (PSA) Birth Certificate</li>
+      <li>Certification from the high school principal stating that the F137- A has not been forwarded to any tertiary institution / Affidavit of non enrollment in other HEls.</li>
+      <li>Certificate of Good Moral Character (with school seal)</li>
+      <li>Four (4) copies of 2"x 2" recent picture</li>
+      <li>Certificate of Honors / Rank, if applicable</li>
+    </ul>
+  <li>Filipino applicants with PEPT/ALS Certificates 
+    <ul>
+      <li>Examinee Report Form (ERF)/Certificate of Rating in Secondary Level</li>
+      <li>Completion Certificate for Secondary Level</li>
+      <li>Philippine Statistics Authority (PSA) Birth Certificate</li>
+      <li>Authenticated Diploma in Secondary Education Equivalency</li>
+      <li>Four (4) copies of 2"x 2" recent picture</li>
+    </ul>
+  </li>
+  <li> Transferees / Second Degree Applicants / Graduates of Associate Programs:
+  <ul>
+     <li>
+Original Transfer Credentials / Honor Dismissal
+Official Transcript of Records / True Copy of Grades from the last school attended 
+Certificate of Good Moral Character
+Course Descriptions
+Philippine Statistics Authority (PSA) Birth Certificate
+Two (2) copies 2"x 2" recent picture 
+</li>
+</ul>
+<li> Cross-Enrollees </li>
+<ul>
+<li>
+Permit to Cross Enroll from their home school signed by the Registrar
+Two (2) copies of 2"x 2" recent picture
+</li>
+</ul>
+</ul>
+      </div>
+    </div>
+    <div class="panel">
+      <div id="title-3" class="accordion-title">
+        <div>Graduate Students</div>
+      </div>
+      <div id="Graduate Students" class="accordion-content">
+        <ul>
+          <li>Transfer Credentials/Honorable Dismissal</li>
+          <li>Original Transcript of Records or True copy of grades from the last school attended</li>
+          <li>Curriculum Vitae (CV)</li>
+          <li>Original Philippine Statistics Authority (PSA) Birth Certificate</li>
+          <li>2pcs identical 2" x 2" recent ID pictures</li>
+          <li>2 recommendation letters from the immediate superior</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ </div>
+  <div class="container">
+  <button class="applybtn" type="button" onclick="window.open('https://admission.tip.edu.ph/web/')">Click to Apply Now</button>
+  </div>
+
+  <script>
+    var accordionTitles = document.querySelectorAll('.accordion-title');
+    var panels = document.querySelectorAll('.accordion-content');
+
+    for (var i = 0; i < accordionTitles.length; i++) {
+      accordionTitles[i].addEventListener("click", function() {
+        var panel = this.nextElementSibling;
+        if (panel.classList.contains("visible")) {
+          panel.classList.remove("visible");
+          this.classList.remove("active");
+          panel.style.maxHeight = null;
+        } else {
+          for (var j = 0; j < panels.length; j++) {
+            if (panels[j].classList.contains("visible")) {
+              panels[j].classList.remove("visible");
+              accordionTitles[j].classList.remove("active");
+              panels[j].style.maxHeight = null;
+            }
+          }
+          panel.classList.add("visible");
+          this.classList.add("active");
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
