@@ -365,7 +365,7 @@ section h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   transition: transform 0.3s ease;
-  background: linear-gradient(to bottom right, #1010b2, #1010b9);
+  background: linear-gradient(to bottom right, #181736, #39367d); 
   border: 2px solid #001a33;
 }
 .policy-section:hover {
@@ -386,7 +386,7 @@ section h1 {
   border-bottom: 2px solid #001a33;
 }
 .accordion {
-  background-color: #0b0b5c;
+  background-color: #353274;
   color: white;
   cursor: pointer;
   padding: 14px;
@@ -398,13 +398,13 @@ section h1 {
   text-align: center;
   position: relative;
   z-index: 1;
-  border-top: 2px solid #0b0b5c;
+  border-top: 2px solid #2f0946;
 }
 .accordion:hover {
-  background-color: #101089;
+  background-color: #413d8f;
 }
 .accordion.active {
-  background-color: #0b0b5c;
+  background-color: #2a0b5c;
   color: white;
 }
 
@@ -432,8 +432,21 @@ section h1 {
   font-size: 14px;
   line-height: 1.6;
 }
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #270b5c;
+  border-radius: 12px;
+  padding: 20px;
+  z-index: 9999;
+  color: white;
+}
 .popup-button {
-  background-color: #353274;
+  background-color: #230b5c;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -444,20 +457,9 @@ section h1 {
   margin: 20px auto;
 }
 .popup-button:hover {
-  background-color: #756cf0;
+  background-color: #413d8f;
 }
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid #353274;
-  border-radius: 12px;
-  padding: 20px;
-  z-index: 9999;
-}
+
 .popup-content {
   overflow-y: auto;
 }
@@ -466,6 +468,11 @@ section h1 {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+.hehe {
+  color: white; 
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

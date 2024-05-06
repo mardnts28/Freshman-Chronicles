@@ -219,10 +219,9 @@
       </div>
 
       <div style="height: 40px;"></div>
-
-      <header>
+      <div class="hehe">
           <h1>School Policies</h1>
-        </header>
+      </div>
         <div class="container">
           <div class="policy-section">
             <h2>Major Policies</h2>
@@ -573,15 +572,34 @@
         <div id="popup" class="popup">
           <div class="popup-content">
             <h2>Punishments/Sanctions</h2>
-            <ul>
-              <li>Punishment 1: Lorem ipsum dolor sit amet.</li>
-              <li>Punishment 2: Consectetur adipiscing elit.</li>
-              <li>
-                Punishment 3: Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </li>
+              <ul>Sanction for Minor Policies
+                <ul>
+                  <li>Admonition or warning</li>
+                  <li>Oral and written apology to the parties concerned</li>
+                  <li>Payment of actual damages inflicted plus penalty as may be determined by the OSA in coordination with the concerned office</li>
+                  <li>Restitution of damaged property</li>
+                  <li>Fine or penalty</li>
+                  <li>Dialogue with parent/guardian</li>
+                  <li>Written reprimand</li>
+                  <li>Counseling</li>
+                  <li>Mandatory service</li>
+                  <li>Other sanctions/penalties as may be determined by the Student Discipline Coordinator and OSA</li>
+                </ul>
             </ul>
-          </div>
+            <ul>Sanction for Major Policies
+              <ul>
+                <li>Disqualification from holding or seeking any position either by election or appointment
+                  <li>Forfeiture of scholarship grants, discounts and privileges</li>
+                  <li>Suspension</li>
+                  <li>Non-readmission</li>
+                  <li>Exclusion or dropping from the roll of students</li>
+                  <li>Expulsion</li>
+                  <li>Other appropriate sanctions as may be determined by the Committee on Investigation</li>
+                </li>
+              </ul>
+              </ul>
+              </ul>
+            </div>
           <span class="popup-close" onclick="closePopup()">X</span>
         </div>
       </main>
@@ -606,10 +624,12 @@
         <script>
           function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.borderRight = "3px solid grey";
           }
 
           function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.borderRight = "0px";
           }
 
           var slideIndex = 0;
