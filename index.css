@@ -98,25 +98,6 @@ main {
   margin-bottom: 20px;
 }
 
-.info-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.button {
-  background-color: #161637;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.button:hover {
-  background-color: #554fb2;
-  color: #fff;
-}
 
 .image-section {
   flex: 1 1 45%;
@@ -428,11 +409,11 @@ section h1 {
 
 .panel {
   padding: 0;
-  background-color: lightblue;
+  background-color: white;
   border-radius: 0 0 12px 12px;
   position: relative;
   z-index: 1;
-  border-top: 2px solid #001a33;
+  border-top: 2px solid #554fb2;
   display: none;
   max-height: 0;
   max-height: 300px;
@@ -451,7 +432,7 @@ section h1 {
   line-height: 1.6;
 }
 .popup-button {
-  background-color: #0b0b5c;
+  background-color: #353274;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -462,7 +443,7 @@ section h1 {
   margin: 20px auto;
 }
 .popup-button:hover {
-  background-color: #63b4cf;
+  background-color: #756cf0;
 }
 .popup {
   display: none;
@@ -470,8 +451,8 @@ section h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #b1dae7;
-  border: 2px solid #0b0b5c;
+  background-color: white;
+  border: 2px solid #353274;
   border-radius: 12px;
   padding: 20px;
   z-index: 9999;
