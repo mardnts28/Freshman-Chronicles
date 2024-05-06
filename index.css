@@ -350,13 +350,14 @@ section h1 {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: white;
   margin-bottom: 30px;
+  color: white;
 }
 .container {
   width: 100%;
   padding: 0 10px;
 }
+
 .policy-section {
   margin-bottom: 20px;
   border-radius: 12px;
@@ -494,6 +495,60 @@ section h1 {
   .policy-list {
     padding-left: 15px;
   }
+}
+
+.btn-loc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Increased size */
+  height: 150px; /* Increased size */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.btn-loc label {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.btn-loc label span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#554fb2, #353274, #161637);
+  border: 2px solid #161637;
+  border-radius: 50%; 
+  box-shadow: inset 0 5px 1px rgba(0, 0, 0, 0.35), 0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+.btn-loc label input[type="checkbox"] {
+  display: none; 
+}
+.btn-loc label input:checked ~ span {
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.35), 0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+.btn-loc label span::before {
+  content: '';
+  position: absolute;
+  inset: 5px 3px;
+  border-top: 1px solid transparent; /* Removed whitish shadow line */
+  filter: blur(2px);
+}
+.btn-loc label i {
+  position: relative;
+  z-index: 10;
+  font-size: 3rem; 
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.btn-loc label input:checked ~ i {
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 8px #fff;
 }
 
 footer {
