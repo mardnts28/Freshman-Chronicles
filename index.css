@@ -496,7 +496,10 @@ section h1 {
     padding-left: 15px;
   }
 }
-
+h1{
+  color: white;
+  
+}
 .btn-loc {
   display: flex;
   justify-content: center;
