@@ -6,20 +6,40 @@
 <title>Admission Requirements</title>
 <style>
     
+nav {
+    background-color: #161637;
+    text-align: center;
+    padding: 10px 0;
+  }
 header {
-    background: linear-gradient(to bottom right, #181736, #413d8f); 
-    color: white; 
-    padding: 20px 0;
-    margin: 0;
-}
-
-header h1 {
-    margin-left: 20px;
-}
+    background-color: #161637;
+    color: #f3f3f3;
+    padding: 10px 0;
+    text-align: center;
+  }
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #161637;
 }
+h1 {
+    font-size: 28px;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    background-color: #161637;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+nav a:hover {
+    color: #413d8f;
+  }
 
 .accordion-title {
     background-color: #353274;
@@ -82,7 +102,7 @@ body {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  margin: 20px auto;
+  margin-bottom: 2 auto;
   display: block;
   max-width: 300px;
 }
@@ -98,7 +118,14 @@ body {
 <body>
   <header>
     <h1>Admission Requirements</h1>
-  </header>
+</header>
+<nav>
+    <div class="container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
   <div class="accordion">
     <div class="panel">
       <div id="title-1" class="accordion-title">
