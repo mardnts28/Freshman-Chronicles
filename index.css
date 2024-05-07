@@ -241,6 +241,7 @@ main {
 }
 .map {
   text-align: center;
+  padding: 50px;
 }
 
 .map h1 {
@@ -529,46 +530,3 @@ section h1 {
   .policy-list {
     padding-left: 15px;
   }
-
-footer {
-  background-color: #0e0d0d;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-family: "Zen Old Mincho", serif;
-  z-index: 1000;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-.socials p,
-.socials a {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 1.2em;
-}
-
-.socials a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.socials a:hover {
-  color: burlywood;
-}
-
-.links a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.links a:hover {
-  color: red;
-}
-
-.links p {
-  font-size: 0.8em;
-}
