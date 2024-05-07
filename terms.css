@@ -14,9 +14,12 @@
     padding: 0;
     margin: 0;
 }
-
+.ters-list p {
+    text-align: justify;
+}
 .terms-list li {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .terms-list strong {
