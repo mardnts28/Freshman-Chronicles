@@ -353,9 +353,10 @@ img:hover {
 
 .description {
   width: 30%;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
   font-size: 1.2em;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
