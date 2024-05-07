@@ -226,6 +226,27 @@ main {
     font-size: 12px;
   }
 }
+.map {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.map h1 {
+  color: white;
+}
+
+.map a {
+  display: inline-block;
+  background-color: white;
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.map a i {
+  font-size: 5rem;
+  color: darkred;
+}
 
 #org {
   text-align: center;
@@ -340,6 +361,7 @@ img:hover {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+    text-align: justify;
   }
 }
 
