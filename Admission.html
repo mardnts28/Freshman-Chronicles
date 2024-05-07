@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Requirements</title>
 <style>
     
 header {
@@ -53,12 +57,11 @@ body {
 }
 
 .panel {
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 4px;
     margin-bottom: 8px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    max-height: 0;
     max-height: 300px;
     overflow-y: auto;
 }
@@ -72,7 +75,6 @@ body {
     color: white;
 }
 
-
 .applybtn {
   background: linear-gradient(to bottom right, #181736, #39367d);
   color: white;
@@ -81,6 +83,8 @@ body {
   border-radius: 12px;
   cursor: pointer;
   margin: 20px auto;
+  display: block;
+  max-width: 300px;
 }
 
 .container {
@@ -90,11 +94,6 @@ body {
 }
 
 </style>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admission Requirements</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
@@ -207,9 +206,8 @@ Two (2) copies of 2"x 2" recent picture
       </div>
     </div>
   </div>
- </div>
   <div class="container">
-  <button class="applybtn" type="button" onclick="window.open('https://admission.tip.edu.ph/web/')">Click to Apply Now</button>
+    <button class="applybtn" type="button" onclick="window.open('https://admission.tip.edu.ph/web/')">Click to Apply Now</button>
   </div>
 
   <script>

@@ -4,221 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #181736, #413d8f);
+            color: #f3f3f3;
+        }
+
+        header {
+            background-color: #161637;
+            color: #f3f3f3;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+
+        ul {
+            text-align: justify;
+        }
+
+        h3 {
+            color: #fff;
+        }
+
+        nav {
+            background-color: #161637;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #f3f3f3;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            color: #756cf0;
+        }
+
+        section {
+            padding: 5px 5px;
+            text-align: center;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        p {
+            margin: 11px auto;
+            max-width: 800px;
+            padding: 30px;
+            background-color: #161637;
+            border-radius: 10px;
+            line-height: 1.5;
+            text-align: justify;
+            color: #fff;
+        }
+
+        li {
+            color: #black;
+        }
+
+        .policy-list {
+            color: black;
+        }
+
+        .Build,
+        .Find,
+        .Know,
+        .Practice,
+        .Focused {
+            background-color: #161637;
+            border-radius: 30px;
+            padding: 30px;
+            color: #f3f3f3;
+        }
+
+        .articles {
+            margin-top: 50px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease;
+            background: linear-gradient(to bottom right, #1010b2, #1010b9);
+            border: 2px solid #001a33;
+            padding: 20px;
+        }
+
+        .articles:hover {
+            transform: translateY(-5px);
+        }
+
+        .articles h2 {
+            font-size: 18px;
+            margin: 0;
+            padding: 15px;
+            background-color: linear-gradient(to bottom right, #0c0c8d, #b9b9f9);
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border-bottom: 2px solid #001a33;
+        }
+
+        .accordion {
+            background-color: #0b0b5c;
+            color: white;
+            cursor: pointer;
+            padding: 14px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            border-radius: 0 0 12px 12px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border-top: 2px solid #0b0b5c;
+        }
+
+        .accordion:hover {
+            background-color: #101089;
+        }
+
+        .accordion.active {
+            background-color: #0b0b5c;
+            color: white;
+        }
+
+        .panel {
+            padding: 0;
+            background-color: white;
+            border-radius: 0 0 12px 12px;
+            position: relative;
+            z-index: 1;
+            border-top: 2px solid #554fb2;
+            display: none;
+            max-height: 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .panel-content {
+            padding: 14px;
+        }
+
+        .policy-list {
+            list-style-type: circle;
+            margin-left: 4px;
+        }
+
+        .policy-list li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .popup-button {
+            background-color: #353274;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.4s;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .popup-button:hover {
+            background-color: #756cf0;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid #353274;
+            border-radius: 12px;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            overflow-y: auto;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #353274;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.4s;
+        }
+
+        .submit-button:hover {
+            background-color: #756cf0;
+        }
+
+        @media screen and (max-width: 600px) {
+            .articles {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
-
-<style>
-h1 {
-  margin-top: 10px;
-  max-width: 300px;
-  padding: 15px;
-  background-color: #161637;
-  border-radius: 30px;
-  line-height: 1.5;
-  text-align: justify;
-  color: #f3f3f3;
-  text-align: center;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
-}
-
-.container { 
-    width: 100%;
-    max-width: 800px;
-}
-
-.articles { 
-    margin-top: 50px;
-    margin-bottom: 10px; 
-    border-radius: 12px; 
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    position: relative;
-    transition: transform 0.3s ease;
-    background: linear-gradient(to bottom right, #1010b2, #1010b9); 
-    border: 2px solid #001a33;
-    padding: 20px;
-}
-
-.articles:hover { 
-    transform: translateY(-5px);
-}
-
-.articles h2 { 
-    font-size: 18px; 
-    margin: 0; 
-    padding: 15px;
-    background-color: linear-gradient(to bottom right, #0c0c8d, #b9b9f9); 
-    color: white;
-    text-transform: uppercase; 
-    letter-spacing: 1px;
-    border-radius: 12px 12px 0 0; 
-    text-align: center;
-    position: relative; 
-    z-index: 1;
-    border-bottom: 2px solid #001a33;
-}
-
-.accordion {
-    background-color: #0b0b5c; 
-    color: white;
-    cursor: pointer; 
-    padding: 14px;
-    width: 100%; 
-    text-align: left; 
-    border: none; 
-    outline: none;
-    border-radius: 0 0 12px 12px; 
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    border-top: 2px solid #0b0b5c;
-}
-
-.accordion:hover { 
-    background-color: #101089;
-}
-
-.accordion.active { 
-    background-color: #0b0b5c; 
-    color: white;
-}
-
-.panel { 
-    padding: 0;
-    background-color: white; 
-    border-radius: 0 0 12px 12px; 
-    position: relative;
-    z-index: 1;
-    border-top: 2px solid #554fb2; 
-    display: none;
-    max-height: 0;
-    max-height: 300px; 
-    overflow-y: auto;
-}
-
-.panel-content { 
-    padding: 14px;
-}
-
-.policy-list {
-    list-style-type: circle; 
-    margin-left: 4px;
-}
-
-.policy-list li {
-    margin-bottom: 10px; 
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.popup-button {
-    background-color: #353274; 
-    color: white;
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 6px; 
-    cursor: pointer;
-    transition: background-color 0.4s, color 0.4s;
-    display: block;
-    margin: 20px auto;
-}
-
-.popup-button:hover { 
-    background-color: #756cf0;
-}
-
-.popup { 
-    display: none; 
-    position: fixed; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    background-color: white;
-    border: 2px solid #353274; 
-    border-radius: 12px;
-    padding: 20px;
-    z-index: 9999;
-}
-
-.popup-content { 
-    overflow-y: auto;
-}
-
-.popup-close { 
-    position: absolute; 
-    top: 10px;
-    right: 10px; 
-    cursor: pointer;
-}
-
-.form-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.form-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-.submit-button {
-    background-color: #353274;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.4s, color 0.4s;
-}
-
-.submit-button:hover {
-    background-color: #756cf0;
-}
-
-@media screen and (max-width: 600px) {
-    .articles {
-        padding: 10px; 
-    }
-}
-</style>
-
 <body>
 <header>
-<h1><strong>Student Life</strong></h1>
+    <h1><strong>STUDENT BLOG</strong></h1>
 </header>
+<nav>
+    <a href="">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Contact</a>
+</nav>
+<h1>Adjusting to College the T.I.P. Way</h1>
+<section>
+    <p>College life often brings with it a combination of excitement and anxiety, especially for freshmen students, who are only getting started in their higher education journey. But if you get accepted to the Technological Institute of the Philippines (T.I.P.), you are in luck because you will not have a hard time making friends and finding good mentors to support you. Nonetheless, we listed five practical tips to help new T.I.P.ians settle into their latest campus life. Consider these as friendly advice based on the experience of some of our students:</p>
+</section>
+<section class="Build">
+    <ul>
+        <li><strong>Build Your Routine</strong> - Create a regular schedule for the entire semester. Establish a consistent yet flexible sleep and wake cycle to get you in the rhythm of young adulthood. This includes building your own study habits and sticking to them as much as possible. Decide how many hours you must devote to each subject in your curriculum for a focused learning.</li>
+    </ul>
+</section>
+<section class="Find">
+    <ul>
+        <li><strong>Find Your Squad</strong> - T.I.P. has existing student organizations that will enable you to quickly adjust into college life. These groups were established precisely to serve that purpose. Most clubs have that mentor-mentee relationship between new and continuing students to ensure they help each other learn and succeed beyond the classrooms.</li>
+    </ul>
+</section>
+<section class="Know">
+    <ul>
+        <li><strong>Know the Culture</strong> - Some students may struggle to fit in once they go into college and that is understandable. But learning to adjust to a new culture will benefit you in the long run. Use your time in college not only to acquire knowledge in your chosen field of discipline, but also establish social capital that will help you develop a sense of belonging to the community.</li>
+    </ul>
+</section>
+<section class="Practice">
+    <ul>
+        <li><strong>Practice Stress Management</strong> - It is important for college students to manage their stress levels while they are still young to keep their physical and mental health in check. Academic life can be both thrilling and tiring. Finding the right balance between school and your life outside of it is key towards creating and maintaining good experiences around the campus.</li>
+    </ul>
+</section>
+<section class="Focused">
+    <ul>
+        <li><strong>Stay Focused</strong> - Whatever situation you may find yourself in, make sure that you keep working towards your goal. For most students, this means passing their classes and graduating on time. T.I.P.ians are taught to have a “grit and determination” mindset. This, in turn, serves as their foundation for developing strong and desirable work ethics.</li>
+    </ul>
+</section>
+<section>
+    <p>Overall, transitioning to college life at T.I.P. is made smoother with these practical tips: establishing routines, finding support through student organizations, understanding the campus culture, prioritizing stress management, and staying focused on academic goals. By embracing these strategies, new T.I.P.ians can navigate their higher education journey with confidence and success</p>
+</section>
+
+<h1><strong>Student Life</strong></h1>
 <div class="container">
     <div class="form-container">
-        <h2>Share Your Experience</h2>
+        <h3>Share Your Experience</h3>
         <form id="experience-form">
             <input type="text" class="form-input" id="title" placeholder="Title" required>
             <textarea class="form-textarea" id="content" placeholder="Your Experience" required></textarea>
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
-    
+
     <div id="user-experiences"></div>
-    
+
     <div class="articles">
         <h2>As a freshman </h2>
         <button class="accordion">Click to read more</button>
@@ -247,46 +341,46 @@ body {
             }
         });
     }
-
     document.getElementById("experience-form").addEventListener("submit", function(event) {
         event.preventDefault();
-        
+
         var title = document.getElementById("title").value;
         var content = document.getElementById("content").value;
-        
+
         var newUserExperience = document.createElement("div");
-        newUserExperience.classList.add("articles"); 
-        
+        newUserExperience.classList.add("articles");
+
         var newUserExperienceTitle = document.createElement("h2");
         newUserExperienceTitle.textContent = title;
-        
+
         var newUserExperienceButton = document.createElement("button");
         newUserExperienceButton.classList.add("accordion");
         newUserExperienceButton.textContent = "Click to read more";
-        
+
         var newUserExperiencePanel = document.createElement("div");
         newUserExperiencePanel.classList.add("panel");
-        
+
         var newUserExperienceContent = document.createElement("div");
         newUserExperienceContent.classList.add("panel-content");
-        
+
         var newUserExperienceList = document.createElement("ul");
         newUserExperienceList.classList.add("policy-list");
-        
+
         var newUserExperienceItem = document.createElement("li");
         newUserExperienceItem.textContent = content;
-        
-        newUserExperienceContent.appendChild(newUserExperienceList);
+
         newUserExperienceList.appendChild(newUserExperienceItem);
+        newUserExperienceContent.appendChild(newUserExperienceList);
         newUserExperiencePanel.appendChild(newUserExperienceContent);
         newUserExperience.appendChild(newUserExperienceTitle);
         newUserExperience.appendChild(newUserExperienceButton);
         newUserExperience.appendChild(newUserExperiencePanel);
-        
-        document.getElementById("user-experiences").prepend(newUserExperience); 
-        
+
+        document.getElementById("user-experiences").prepend(newUserExperience);
+
         document.getElementById("experience-form").reset();
     });
+
 </script>
 </body>
 </html>
