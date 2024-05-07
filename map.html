@@ -1,29 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map</title>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>MAP</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #181736, #413d8f);
+      color: #f3f3f3;
+    }
+    header {
+      background-color: #161637;
+      color: #f3f3f3;
+      padding: 10px 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #161637;
+      text-align: center;
+      padding: 5px 0;
+    }
+    nav a {
+      color: #f3f3f3;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      color: #756cf0;
+    }
+    .container {
+      text-align: center;
+      margin-top: 5px; 
+      padding: 10px 0;
+    }
+    .small-image {
+      max-width: 100%; 
+      display: block;
+      margin: auto;
+    }
+  </style>
 </head>
-<style>
-
-
-h1 {
-  margin: 30px auto;
-  max-width: 500px;
-  padding: 10px;
-  background-color: #161637;
-  border-radius: 30px;
-  line-height: 1.5;
-  text-align: justify;
-  color: #f3f3f3;
-  text-align: center;
-}
-
-</style>
 <body>
-  <div> 
-    <h1>Map</h1>
-  </div> 
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1>TIP WAY</h1> 
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="trial.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <div class="container">
+    <img src="tip map.jpg" alt="Map" class="small-image"> 
+  </div>
 </body>
 </html>
