@@ -503,7 +503,8 @@ section h1 {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) 
+{
   section {
     margin-top: 40px;
   }
@@ -530,3 +531,4 @@ section h1 {
   .policy-list {
     padding-left: 15px;
   }
+}
