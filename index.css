@@ -10,10 +10,11 @@ body {
 }
 
 .Cmage {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
+  width: 400px;
+  height: auto;
   border: 5px solid #717171;
+  margin-right: 5px;
+  overflow:hidden
 }
 
 .navbar {
@@ -265,28 +266,26 @@ main {
   margin-bottom: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .slideshow-container {
-  max-width: 1000px;
-  height: auto;
-  position: relative;
+  max-width: 100%;
+  width: 100%;
   margin: auto;
   text-align: center;
-  margin-top: 50px;
-  background-color: #161616;
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: black;
 }
 
 .mySlides {
   display: none;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; 
 }
 
 img {
-  vertical-align: middle;
   max-width: 100%;
 }
 
@@ -336,15 +335,10 @@ img {
 
 .slide-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 40px;
-}
-
-img {
-  vertical-align: middle;
-  max-width: 100%;
-  transition: transform 0.2s;
+  padding: 20px;
+  height: 100%;
 }
 
 img:hover {
@@ -352,10 +346,10 @@ img:hover {
 }
 
 .description {
-  width: 30%;
-  text-align: center;
-  box-sizing: border-box;
+  width: 60%;
   font-size: 1.2em;
+  text-align: left;
+  color:black;
   text-align: justify;
 }
 
@@ -542,12 +536,11 @@ footer {
   padding: 20px;
   text-align: center;
   font-family: "Zen Old Mincho", serif;
-}
-
-.footer-content {
+  z-index: 1000;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 .socials p,
 .socials a {
